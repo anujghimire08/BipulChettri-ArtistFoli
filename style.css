@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  padding-bottom: 20px;
+  font-family: "Karla", sans-serif;
+}
+main {
+  width: 800px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 60px;
+}
+header {
+  width: 100%;
+  position: relative;
+} 
+header #banner {
+  width: 100%;
+  box-shadow: inset 10px 10px 20px 5px black;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.intro {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+.logo {
+  position: relative;
+}
+#tick {
+  position: absolute;
+  width: 30px;
+  bottom: 3px;
+  right: 3px;
+}
+.logo img {
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.name h2 {
+  font-size: 18px;
+}
+.name p {
+  font-size: 12px;
+}
+.social-media-handle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+.social-media-handle a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: grey;
+  padding: 20px;
+}
+nav h4:hover {
+  color: white;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+.scroll-icons i {
+  color: white;
+  font-size: 18px;
+}
+.scroll-icons button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  background-color: transparent;
+}
+.scroll-icons button:hover {
+  background-color: rgba(128, 128, 128, 0.475);
+}
+.music-section,
+.video-section,
+.merch-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 20px 10px 30px;
+}
+.music-section-container,
+.video-section-container,
+.merch-section-container {
+  display: flex;
+  flex-direction: column;
+}
+.music-details,
+.video-details,
+.merch-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.music-details p,
+.video-details p,
+.merch-details p {
+  color: grey;
+}
+.music-details b,
+.video-details b,
+.merch-details b {
+  font-size: 14px;
+}
+.music-section-container {
+  position: relative;
+}
+.mpauseplay {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  left: 60px;
+  top: 60px;
+  width: 100%;
+  display: none;
+}
+.music-section-container:hover .mpauseplay {
+  display: block;
+}
+.music-banner img {
+  filter: grayscale(0);
+}
+.music-section-container:hover .music-banner img {
+  filter: grayscale(1);
+}
+.mpause {
+  font-size: 50px;
+}
+.music-banner img {
+  width: 175px;
+  border-radius: 6px;
+}
+.music-details button {
+  margin-top: 5px;
+  width: 30%;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.music-details button:hover {
+  color: black;
+  background-color: white;
+}
+.video-banner img {
+  width: 100%;
+}
+.video-section-container {
+  position: relative;
+}
+.vpauseplay {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+}
+.vpauseplay button {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-section-container:hover button {
+  background-color: black;
+}
+.vpause {
+  font-size: 25px;
+  color: white;
+}
+
+.merch-banner img {
+  width: 250px;
+  height: 200px;
+}
+.merch-banner:hover img,
+.about-section-left:hover img {
+  transform: scale(1.02);
+}
+.about-section {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about-section-left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.about-section-right {
+  flex: 1;
+}
+.about-section-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about-section-right p {
+  letter-spacing: 0.3;
+  font-size: 16px;
+  text-align: justify;
+}
