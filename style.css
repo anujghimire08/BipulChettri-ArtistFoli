@@ -78,7 +78,7 @@ header::after {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 9px;
   margin-top: 5px;
 }
 .social-media-handle a {
