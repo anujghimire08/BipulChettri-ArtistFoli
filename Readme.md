@@ -13,7 +13,7 @@ The website features Bipul Chettri, a renowned Nepali singer and songwriter know
 ## Live Demo
 
 <p align="center">
-  <a href="bipulchettri.vercel.app">
+  <a href="https://anujghimire08.github.io/BipulChettri-ArtistFoli/">
    <img src="https://img.shields.io/badge/Live-Demo-000000?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
