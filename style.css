@@ -11,6 +11,7 @@ body {
   background-color: black;
   padding-bottom: 20px;
   font-family: "Karla", sans-serif;
+  width: 100%;
 }
 main {
   width: 800px;
@@ -23,7 +24,7 @@ main {
 header {
   width: 100%;
   position: relative;
-} 
+}
 header #banner {
   width: 100%;
   box-shadow: inset 10px 10px 20px 5px black;
@@ -205,6 +206,7 @@ nav h4:hover {
   width: 40px;
   height: 40px;
   padding: 5px;
+
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   display: flex;
@@ -249,5 +251,126 @@ nav h4:hover {
 .about-section-right p {
   letter-spacing: 0.3;
   font-size: 16px;
-  text-align: justify;
+}
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+  header #banner {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  #tick {
+    width: 25px;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .name h2 {
+    font-size: 14px;
+  }
+  .name p {
+    font-size: 10px;
+  }
+  .social-media-handle {
+    gap: 5px;
+    margin-top: 5px;
+  }
+  .social-media-handle a {
+    font-size: 14px;
+  }
+  nav {
+    padding: 10px;
+  }
+  .scroll-icons i {
+    font-size: 12px;
+  }
+  .scroll-icons button {
+    width: 20px;
+    height: 20px;
+  }
+  .section-title {
+    padding: 10px;
+  }
+  .music-section,
+  .video-section,
+  .merch-section {
+    padding: 10px;
+  }
+  .music-section,
+  .video-section,
+  .merch-section {
+    font-size: 9px;
+  }
+  .mpauseplay {
+    z-index: 1;
+    left: 30px;
+    top: 30px;
+    width: 100%;
+    display: none;
+  }
+  .music-banner img {
+    width: 110px;
+    border-radius: 6px;
+  }
+  .music-details button {
+    width: fit-content;
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+  #last-music-box {
+    display: none;
+  }
+  .vpauseplay button {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-section-container:hover button {
+    background-color: black;
+  }
+  .vpause {
+    font-size: 25px;
+    color: white;
+  }
+  .vpauseplay {
+    position: absolute;
+    top: 29%;
+    left: 40%;
+  }
+  .merch-banner img {
+    width: 90px;
+    height: 90px;
+  }
+  .merch-banner:hover img,
+  .about-section-left:hover img {
+    transform: scale(1.02);
+  }
+  .about-section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .about-section-left img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  .about-section-right {
+    flex: 1;
+  }
+  .about-section-right p {
+    letter-spacing: 0.1px;
+    font-size: 12px;
+  }
 }
